@@ -12,7 +12,7 @@ class HomeRouter {
         this._configure()
     }
 
-    private _configure() {
+    private _configure():void {
         this._router.get('/', (req: Request, res: Response, next: NextFunction) => {
             res.send('home')
         })

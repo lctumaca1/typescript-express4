@@ -12,7 +12,7 @@ class TestRouter {
         this._configure()
     }
 
-    private _configure() {
+    private _configure(): void {
         this._router.get('/', (req: Request, res: Response, next: NextFunction) => {
             res.render('index')
         })

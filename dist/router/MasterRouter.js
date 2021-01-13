@@ -15,9 +15,9 @@ class MasterRouter {
     _configure() {
         this._router.use('/', this._homeRouter);
         this._router.use('/test', this._testRouter);
-        this._router.use((req, res, next) => {
-            res.status(400).render('index');
-        });
+        // this._router.use((req, res, next) => {
+        //     // res.status(400).render('index')
+        // })
     }
 }
 module.exports = new MasterRouter()._router;

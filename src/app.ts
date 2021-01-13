@@ -1,7 +1,9 @@
 import express, {Request, Response, NextFunction} from 'express'
+import path from 'path'
+
 import MasterRouter from './router/MasterRouter'
 import Server from './Server'
-import path from 'path'
+
 
 class App {
 
@@ -16,18 +18,20 @@ class App {
         this.setRouter()
     }
 
-    private setRouter() {
+    private setRouter(): void {
         this.app.use('/', MasterRouter)
     }
 
-    private setViewEngine() {
+    private setViewEngine(): void {
         this.app.set('views', path.join(__dirname, 'views'))
         this.app.set('view engine', 'ejs')
-
         // this.app.use(express.static( path.join(__dirname, 'public') ));
     }
 
-    
+    private setMiddleware(): void {
+
+    }
+
 }
 
-const app = new App();
+export default new App().app

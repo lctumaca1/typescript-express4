@@ -6,7 +6,7 @@ export default class Server {
     public _app!: express.Application
 
     constructor(app: express.Application) {
-        this._port = process.env.PORT || 12000
+        this._port = process.env.PORT || 5000
         this._app = app
 
         this.createServer()
