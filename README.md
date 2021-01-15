@@ -1,7 +1,5 @@
 # typescript-express4
-typescript 환경에서 제작한 express 템플이며, 개발환경 세팅을 줄이고자하여 제작되었습니다.
-
-
+typescript 환경에서 제작한 express 템플릿이며, 개발환경 세팅을 줄이고자하여 제작되었습니다.
 
 ## Getting Started
 먼저 PC에 typescript의 환경을 설정해야되기 때문에 [npm](https://nodejs.org/ko)을 통해 [typescript](https://www.npmjs.com/package/typescript)을 설치해줍시다.
