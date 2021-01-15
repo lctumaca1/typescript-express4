@@ -1,6 +1,10 @@
 # typescript-web
 The ```typescript-web``` project is designed to make desktop apps or web apps easier to create, reduce developer mistakes and easily develop, and is designed to facilitate maintenance when using ```Express 4``` Modules.
 
+### Getting started
+```
+git clone https://github.com/lctumaca1/typescript-web.git && cd ./typescript-web && npm install
+```
 
 ### Dependency Module in Use
 + product
