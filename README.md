@@ -1,14 +1,12 @@
 # typescript-express4
-typescript 환경에서 제작한 express 템플릿이며, 개발환경 세팅을 줄이고자하여 제작되었습니다.
+typescript 환경에서 제작한 프로토타입 프로젝트입니다. 해당 프로젝트는 Desktop App이 될 수도 있고, Web이 될 수도 있습니다.
 
 ## Getting Started
-먼저 프로젝트를 클론하고,
+프로젝트를 시작하기 전에 프로젝트를 git clone을 합니다.
 ```
 git clone https://github.com/lctumaca1/typescript-express4.git
 ```
-
-git clone 이후에 해줄 작업은 해당 프로젝트에 필요로 하는 module들을 재설치하는 작업인데요. 다음 명령어를 해당 프로젝트의 terminal shell에 적어줍시다.
-
+git clone 해주고 나서 필요한 module들을 설치해줍니다.
 ```
 npm install
 ```
@@ -18,7 +16,6 @@ npm install
 + product
   + [express](https://www.npmjs.com/package/express)
   + [mysql](https://www.npmjs.com/package/mysql)
-  + [ejs](https://www.npmjs.com/package/ejs)
 + development
   + [typescript](https://www.npmjs.com/package/typescript)
   + [@types/express](https://www.npmjs.com/package/@types/express)
@@ -27,27 +24,15 @@ npm install
   + [@types/node](https://www.npmjs.com/package/@types/node)
   + [node](https://www.npmjs.com/package/node)
   + [ts-node](https://www.npmjs.com/package/ts-node)
+  + [electron](https://www.npmjs.com/package/electron)
+  + [ejs](https://www.npmjs.com/package/ejs)
   
-## How to add code?
-root/src 에서 작업하시면 되며 프로젝트의 entry point는 dist와 src에서 각각 index.js와 index.ts입니다.
-
-## How to build project?
-프로젝트를 러닝하기 전에 타입스크립트를 자바스크립트로 빌드하는 작업이 꼭 필요로 하기때문에 러닝하기 전에
+## Scripts
 ```
-npm run build
-```
-를 실행시켜야 합니다.
-
-정상적으로 root/dist 폴더가 빌드가 되면 프로젝트를 러닝하실 수있습니다.
-
-## How to running project?
-프로젝트를 시작하면 root/dist/index.js를 실행하게 됩니다.
-```
-npm run start
-```
-
-## How to running project for dev?
-개발을 할때 서버를 멈추고 다시 시작할 필요없이 이 명령어를 실행하면 수시로 바뀌는 코드를 읽어들여 자동으로 적용합니다.
-```
-npm run dev
+  "scripts": {
+    "default:start": "node dist/index.js", //
+    "default:dev": "nodemon src/index.ts",
+    "default:build": "[ -d ./dist ] && ( rm -r ./dist && tsc -p . ) ||  tsc -p .",
+    "electron:start": "electron ./dist/index.js"
+  },
 ```

@@ -1,19 +1,20 @@
 {
-  "name": "typescript-express4",
-  "version": "1.0.1",
+  "name": "typescript-web",
+  "version": "2.0.1",
   "description": "",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "default:start": "node dist/index.js",
     "default:dev": "nodemon src/index.ts",
     "default:build": "[ -d ./dist ] && ( rm -r ./dist && tsc -p . ) ||  tsc -p .",
     "electron:start": "electron ./dist/index.js"
   },
+  "repository": "https://github.com/lctumaca1/typescript-web.git",
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "lctumaca1",
+  "license": "MIT",
   "dependencies": {
-    "ejs": "^3.1.5",
+    "express": "^4.17.1",
     "mysql": "^2.18.1"
   },
   "devDependencies": {
@@ -21,8 +22,8 @@
     "@types/express": "^4.17.11",
     "@types/mysql": "^2.15.17",
     "@types/node": "^14.14.20",
+    "ejs": "^3.1.5",
     "electron": "^11.2.0",
-    "express": "^4.17.1",
     "nodemon": "^2.0.7",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.3"
