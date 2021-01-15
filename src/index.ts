@@ -1,8 +1,4 @@
-import debug from "debug";
-import Electron from "electron";
-import http from "http";
-
-import App from "./App";
+import App from "./express/App";
 
 export default class Main {
 

@@ -4,7 +4,5 @@ class TestModel extends DBManager {
 
     constructor() {
         super()
-
-        console.log(this.db_connection)
     }
 }

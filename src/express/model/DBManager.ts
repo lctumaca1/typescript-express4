@@ -5,10 +5,10 @@ export default class DBManager {
 
     constructor() {
         this.db_connection = mysql.createConnection({
-            host: 'localhost',
-            user: '',
-            password: '',
-            database: ''
+            host:       '',
+            user:       '',
+            password:   '',
+            database:   ''
         })
     }
 }

@@ -7,7 +7,7 @@ const mysql_1 = __importDefault(require("mysql"));
 class DBManager {
     constructor() {
         this.db_connection = mysql_1.default.createConnection({
-            host: 'localhost',
+            host: '',
             user: '',
             password: '',
             database: ''

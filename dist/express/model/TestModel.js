@@ -7,6 +7,5 @@ const DBManager_1 = __importDefault(require("./DBManager"));
 class TestModel extends DBManager_1.default {
     constructor() {
         super();
-        console.log(this.db_connection);
     }
 }

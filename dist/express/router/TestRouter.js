@@ -12,10 +12,10 @@ class TestRouter {
     }
     _configure() {
         this._router.get('/', (req, res, next) => {
-            res.render('index');
+            res.send('this is test page!');
         });
         this._router.post('/', (req, res, next) => {
-            res.send('test');
+            res.send('this is test page! and you are testing POST method!');
         });
     }
 }

@@ -14,7 +14,7 @@ class HomeRouter {
 
     private _configure():void {
         this._router.get('/', (req: Request, res: Response, next: NextFunction) => {
-            res.send('home')
+            res.send('this is home!')
         })
     }
 

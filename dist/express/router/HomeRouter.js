@@ -12,7 +12,7 @@ class HomeRouter {
     }
     _configure() {
         this._router.get('/', (req, res, next) => {
-            res.send('home');
+            res.send('this is home!');
         });
     }
 }

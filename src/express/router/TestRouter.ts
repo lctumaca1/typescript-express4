@@ -14,11 +14,11 @@ class TestRouter {
 
     private _configure(): void {
         this._router.get('/', (req: Request, res: Response, next: NextFunction) => {
-            res.render('index')
+            res.send('this is test page!')
         })
 
         this._router.post('/', (req: Request, res: Response, next: NextFunction) => {
-            res.send('test')
+            res.send('this is test page! and you are testing POST method!')
         })
         
     }
