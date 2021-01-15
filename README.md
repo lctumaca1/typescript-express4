@@ -4,7 +4,7 @@ typescript 환경에서 제작한 express 템플이며, 개발환경 세팅을 �
 
 
 ## Getting Started
-먼저 PC에 typescript의 환경을 설정해야되기 때문에 [npm](https://nodejs.org/ko)을 통해 typescript을 설치해줍시다.
+먼저 PC에 typescript의 환경을 설정해야되기 때문에 [npm](https://nodejs.org/ko)을 통해 [typescript](https://www.npmjs.com/package/typescript)을 설치해줍시다.
 ```
 npm install -g typescript
 ```
@@ -23,16 +23,16 @@ npm install
 
 ## Dependency Module in Use
 + product
-  + express
-  + mysql
-  + ejs
+  + [express](https://www.npmjs.com/package/express)
+  + [mysql](https://www.npmjs.com/package/mysql)
+  + [ejs](https://www.npmjs.com/package/ejs)
 + development
-  + @types/express
-  + @types/mysql
-  + @types/ejs
-  + @types/node
-  + node
-  + ts-node
+  + [@types/express](https://www.npmjs.com/package/@types/express)
+  + [@types/mysql](https://www.npmjs.com/package/@types/mysql)
+  + [@types/ejs](https://www.npmjs.com/package/@types/ejs)
+  + [@types/node](https://www.npmjs.com/package/@types/node)
+  + [node](https://www.npmjs.com/package/node)
+  + [ts-node](https://www.npmjs.com/package/ts-node)
   
 ## How to add code?
 개발자가 코드를 작성하는 부분은 root/src 이며 entry point는 root/src/index.ts 입니다.
