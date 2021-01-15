@@ -20,6 +20,8 @@ git clone https://github.com/lctumaca1/typescript-web.git && cd ./typescript-web
   + [ts-node](https://www.npmjs.com/package/ts-node)
   + [electron](https://www.npmjs.com/package/electron)
   + [ejs](https://www.npmjs.com/package/ejs)
+  + [asar](https://www.npmjs.com/package/asar)
+  + [electron-packager](https://www.npmjs.com/package/electron-packager)
   
 ### Scripts
 ```
