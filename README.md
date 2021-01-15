@@ -4,7 +4,7 @@ typescript 환경에서 제작한 express 템플이며, 개발환경 세팅을 �
 
 
 ## Getting Started
-먼저 PC에 typescript의 환경을 설정해야되기 때문에 npm을 통해 typescript을 설치해줍시다.
+먼저 PC에 typescript의 환경을 설정해야되기 때문에 [npm](https://nodejs.org/ko)을 통해 typescript을 설치해줍시다.
 ```
 npm install -g typescript
 ```
