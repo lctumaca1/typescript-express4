@@ -26,9 +26,9 @@ git clone https://github.com/lctumaca1/typescript-web.git && cd ./typescript-web
 ### Scripts
 ```
   "scripts": {
-    "default:start":  "node dist/index.js",
-    "default:dev":    "nodemon src/index.ts",
-    "default:build":  "[ -d ./dist ] && ( rm -r ./dist && tsc -p . ) ||  tsc -p .",
-    "electron:start": "electron ./dist/index.js"
+    "init": "[ -d ./node_modules ] && ( echo 'It's already reset!' ) || ( npm install && npm run default:build && echo 'I'm ready for work!' )",
+    "default:start": "node dist/index.js",
+    "default:dev": "nodemon src/index.ts",
+    "default:build": "[ -d ./dist ] && ( rm -r ./dist && tsc -p . ) ||  tsc -p ."
   },
 ```
