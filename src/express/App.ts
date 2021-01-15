@@ -4,8 +4,7 @@ import path from 'path'
 import MasterRouter from './router/MasterRouter'
 import Server from './Server'
 
-
-class App {
+export default class App {
 
     public app: express.Application
     public server: Server
@@ -13,9 +12,6 @@ class App {
     constructor() {
         this.app = express()
         this.server = new Server(this.app)
-
-        this.setViewEngine()
-        this.setRouter()
     }
 
     private setRouter(): void {
@@ -32,6 +28,9 @@ class App {
 
     }
 
-}
+    public startApp(): void {
+        this.setViewEngine()
+        this.setRouter()
+    }
 
-export default new App().app
+}

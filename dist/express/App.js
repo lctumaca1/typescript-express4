@@ -11,8 +11,6 @@ class App {
     constructor() {
         this.app = express_1.default();
         this.server = new Server_1.default(this.app);
-        this.setViewEngine();
-        this.setRouter();
     }
     setRouter() {
         this.app.use('/', MasterRouter_1.default);
@@ -24,5 +22,9 @@ class App {
     }
     setMiddleware() {
     }
+    startApp() {
+        this.setViewEngine();
+        this.setRouter();
+    }
 }
-exports.default = new App().app;
+exports.default = App;
