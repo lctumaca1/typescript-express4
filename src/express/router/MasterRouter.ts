@@ -16,9 +16,9 @@ class MasterRouter {
         this._router.use('/', this._homeRouter)
         this._router.use('/test', this._testRouter)
 
-        // this._router.use((req, res, next) => {
-        //     // res.status(400).render('index')
-        // })
+        this._router.use((req, res, next) => {
+            res.status(400).send(JSON.stringify({error_code: 404, error_message: 'page not found :('}, null, 2))
+        })
     }
 
     

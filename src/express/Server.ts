@@ -2,8 +2,8 @@ import express from 'express'
 
 export default class Server {
 
-    public _port!: any
-    public _app!: express.Application
+    public _port: any
+    public _app: express.Application
 
     constructor(app: express.Application) {
         this._port = process.env.PORT || 5000
@@ -14,7 +14,7 @@ export default class Server {
 
     public createServer() {
         this._app.listen(this._port, () => {
-            console.log(`Server is listening on port: ${this._port}`)
+            console.log(`Server is listening on PORT: ${this._port}`)
         })
     }
 }

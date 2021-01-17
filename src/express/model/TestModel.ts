@@ -1,6 +1,6 @@
 import DBManager from './DBManager'
 
-class TestModel extends DBManager {
+export default class TestModel extends DBManager {
 
     constructor() {
         super()

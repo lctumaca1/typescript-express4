@@ -1,7 +1,6 @@
-import Electron from './electron/Electron'
 import App from "./express/App";
 
-//entry point class
+// entry point class
 export default class Main {
 
   private _app: App
@@ -17,6 +16,5 @@ export default class Main {
   }
 }
 
-const electron = new Electron()
-const entryPoint = new Main()
+const entryPoint = new Main() // entry point
 

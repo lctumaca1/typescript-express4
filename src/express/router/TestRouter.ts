@@ -14,11 +14,7 @@ class TestRouter {
 
     private _configure(): void {
         this._router.get('/', (req: Request, res: Response, next: NextFunction) => {
-            res.send('this is test page!')
-        })
-
-        this._router.post('/', (req: Request, res: Response, next: NextFunction) => {
-            res.send('this is test page! and you are testing POST method!')
+            res.status(200).send(JSON.stringify({error_code: 200, error_message: `hello! your path is ${req.originalUrl}`}, null, 2))
         })
         
     }

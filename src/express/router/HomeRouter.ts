@@ -14,7 +14,7 @@ class HomeRouter {
 
     private _configure():void {
         this._router.get('/', (req: Request, res: Response, next: NextFunction) => {
-            res.send('this is home!')
+            res.status(200).send(JSON.stringify({error_code: 200, error_message: `hello! your path is ${req.originalUrl}`}, null, 2))
         })
     }
 
